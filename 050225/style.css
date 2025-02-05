@@ -1,0 +1,68 @@
+header{
+    background-color: #252627;
+    color: #ccc;
+    border-bottom: solid 3px darkred;
+    
+}
+footer{
+    background-color: #252627;
+    color: #ccc;
+
+}
+#ust-menu a, #dil-menu a, #ana-menu a,#alt-menu a,#alt-logo a{
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+#logo{
+    padding: 10px 0;
+    border-bottom: solid #ccc 2px;
+}
+#ana-menu a:hover{
+    background-color: darkred;
+    transition: 0.75s;
+}
+.card img{
+    width: 100%;
+}
+.card{
+    background-color: #252627;
+    padding: 10px;
+    color: #ccc;
+}
+.tur{
+    background-color: darkred;
+    padding: 7px;
+}
+.yer{
+    padding-top: 20px;
+}
+main{
+    background-color: #ccc;
+    padding-bottom: 20px;
+
+}
+.card{
+    margin: 5px;
+    min-height: 100%;
+    padding-bottom: 10px;
+}
+#soz{
+    background-color: darkred ;
+    border: solid 5px white;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+
+}
+#soz q{
+    font-size: 1.5em;
+}
+footer a{
+    background-color: #252627;
+    color: #ccc;
+    font-size: 15px;
+}
