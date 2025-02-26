@@ -1,0 +1,11 @@
+body{
+    background-image: url(res/bg.jpg);
+    background-size: cover;
+}
+.menu .nav-link{
+    color: black;
+}
+.menu a:hover{
+    background-color: aliceblue;
+    transition: 2sn;
+}
