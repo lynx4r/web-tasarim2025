@@ -1,0 +1,62 @@
+.btn-primary{
+    background-color: var(--bs-primary);
+
+}
+/*header*/
+
+#lang-menu{
+    border-right: var(--bs-border-width) solid var(--bs-white);
+}
+#lang-menu a, 
+#social-menu a{
+    color: var(--bs-white);
+}
+
+#lang-menu a:hover{
+    color: var(--bs-black);
+    background-color: var(--bs-white);
+}
+
+#social-menu a:hover{
+    color: var(--bs-primary);
+}
+
+#search-panel input::placeholder{
+    color: var(--bs-secondary);
+}
+
+#search-panel button:hover{
+    background-color: var(--bs-secondary);
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow:0;
+}
+
+input[type="search"]::placeholder{
+    color: var(--bs-secondary);
+}
+
+input[type="search"]:focus{
+    box-shadow: none;
+}
+
+/*bolum1*/
+#bolum1 .card{
+    background-color: var(--bs-secondary);
+}
+
+#bolum1 .card-body{
+    border: 2px solid var(--bs-white);
+}
+
+#bolum1{
+    position:relative;
+    z-index: 100;
+    margin-top: -50px;
+}
+
+.yatay-cizgi{
+    border-bottom: 1px solid var(--bs-white);
+}
