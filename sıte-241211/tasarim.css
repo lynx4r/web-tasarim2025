@@ -1,0 +1,88 @@
+/*Genel biçimlendirme*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/*header bölümü*/
+
+header{
+    padding-top: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#main-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;/*içindeki flex öğeleri ortalanır*/
+}
+
+#main-menu a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 10px;  
+}
+
+/*ORTA BÖLÜM*/
+
+main{
+    display:flex;
+    gap:20px; /*içindeki nesneler arasında boşluk bırakır*/
+    padding:20px;
+    flex: auto;
+}
+
+#content p{
+    margin-bottom:15px;
+    margin-top:5px;
+}
+
+#content{
+    background-color:#ffc2e5;
+    padding:20px; /*iç boşluk*/
+    border: #333 solid 1px;
+    flex:9;
+}
+
+body{
+    min-height:100vh;
+    padding-top:10px;
+    font-size:10px;
+    line-height:10px;
+}
+
+aside{
+    background-color:#ffc2e5;
+    padding:20px;
+    border: #333 solid 1px;
+    flex:3;
+}
+
+header,footer{
+    padding-top:30px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+aside ul{
+    list-style:none;
+}
+
+aside h2{
+    margin-bottom: 10px;
+}
+
+aside a{
+    color:#000;
+}
+
+footer{
+    padding-bottom:30px;
+}
