@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container mt-4">
+        <form action="kaydet.php" method="post">
+            <!-- Label Bölümü -->
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label" for="ad">Ad</label>
+                    <input class="form-control" type="text" id="ad" required/>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="soyad">Soyad</label>
+                    <input class="form-control" type="text" id="soyad" required/>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="eposta">E-posta</label>
+                    <input class="form-control" type="email" id="eposta" required/>
+                </div>
+                <div class="col-md-6 form-check">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tercih" id="sikayet">
+                        <label for="sikayet" class="form-label">Şikayet</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tercih" id="oneri">
+                    <label for="oneri" class="form-label">Öneri</label>
+                    </div>
+                </div>
+                <!-- Açıklama -->
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="aciklama" style="height: 100px"></textarea>
+                    <label for="aciklama">Açıklama</label>
+                  </div>
+                  <!-- Sehirler -->
+                  <div>
+                  <select class="form-select" name="sehirler" id="sehirler">
+                    <option value="" disabled selected>Seçiniz</option>
+                    <option value="1">İstanbul</option>
+                    <option value="2">Ankara</option>
+                    <option value="3">Mardin</option>
+                    <option value="4">Antalya</option>
+                    <option value="5">İzmir</option>
+                    <option value="6">Van</option>
+                    <option value="7">Amasya</option>
+                  </select>
+                </div>
+                  <!-- Checkbox -->
+                  <p>Sevdiğiniz pasta çeşidi</p>
+                  <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="cikolatali" value="cikolatali">
+                    <label class="form-check-label" for="cikolatali">Çikolatalı Pasta</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="cilekli" value="cilekli">
+                    <label class="form-check-label" for="cilekli">Çilekli Pasta</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="muzlu" value="muzlu">
+                    <label class="form-check-label" for="muzlu">Muzlu Pasta</label>
+                  </div>
+                </div>
+                  <!-- Buton -->
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a class="btn btn-primary" href="kaydet.php" role="button">Kaydet</a>
+                    <input class="btn btn-primary" type="reset" value="Temizle">
+                  </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Örnek2 -->
+    <form class="was-validated">
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label">Textarea</label>
+          <textarea class="form-control" id="validationTextarea" placeholder="Gerekli örnek textarea" required></textarea>
+          <div class="invalid-feedback">
+            Lütfen textarea'ya bir mesaj girin.
+          </div>
+        </div>
+      
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+          <label class="form-check-label" for="validationFormCheck1">Bu onay kutusunu işaretleyin</label>
+          <div class="invalid-feedback">Örnek geçersiz geri bildirim metni</div>
+        </div>
+      
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck2">Bu radyoyu aç/kapat</label>
+        </div>
+        <div class="form-check mb-3">
+          <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck3">Veya bu diğer radyoyu açıp kapatın</label>
+          <div class="invalid-feedback">Daha fazla örnek geçersiz geri bildirim metni</div>
+        </div>
+      
+        <div class="mb-3">
+          <select class="form-select" required aria-label="select example">
+            <option value="">Bu seçim menüsünü aç</option>
+            <option value="1">Bir</option>
+            <option value="2">İki</option>
+            <option value="3">Üç</option>
+          </select>
+          <div class="invalid-feedback">Örnek geçersiz seçim geri bildirimi</div>
+        </div>
+      
+        <div class="mb-3">
+          <input type="file" class="form-control" aria-label="file example" required>
+          <div class="invalid-feedback">Örnek geçersiz form dosyası geri bildirimi</div>
+        </div>
+      
+        <div class="mb-3">
+          <button class="btn btn-primary" type="submit" disabled>Formu gönder</button>
+        </div>
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
