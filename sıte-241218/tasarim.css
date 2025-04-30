@@ -1,0 +1,71 @@
+/* Genel Ayarlar */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Kart Tasarımı */
+  .card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Kart Hover Efekti */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Kart Resmi */
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Kart İçeriği */
+  .card-content {
+    padding: 15px;
+  }
+  
+  /* Kart Başlığı */
+  .card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  /* Kart Açıklaması */
+  .card-description {
+    font-size: 1em;
+    margin: 0 0 20px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Kart Butonu */
+  .card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+  

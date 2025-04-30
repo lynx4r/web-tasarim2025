@@ -1,0 +1,68 @@
+/* Genel sayfa ayarları */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Satranç tahtası */
+  .chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    width: 480px;
+    height: 480px;
+    border: 4px solid #000;
+  }
+  
+  /* Kareler */
+  .chessboard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+  
+  /* Siyah-beyaz renk düzeni */
+  .chessboard div:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  .chessboard div:nth-child(even) {
+    background-color: #000;
+  }
+  
+  .chessboard div:nth-child(8n + 1):nth-child(odd),
+  .chessboard div:nth-child(8n + 1):nth-child(even) ~ div:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  .chessboard div:nth-child(8n + 1):nth-child(even),
+  .chessboard div:nth-child(8n + 1):nth-child(odd) ~ div:nth-child(odd) {
+    background-color: #000;
+  }
+  
+  /* Taşlar */
+  .chessboard div:nth-child(1)::before,
+  .chessboard div:nth-child(8)::before { content: "♜"; color: white; } /* Siyah kale */
+  .chessboard div:nth-child(2)::before,
+  .chessboard div:nth-child(7)::before { content: "♞"; color: white; } /* Siyah at */
+  .chessboard div:nth-child(3)::before,
+  .chessboard div:nth-child(6)::before { content: "♝"; color: white; } /* Siyah fil */
+  .chessboard div:nth-child(4)::before { content: "♛"; color: white; } /* Siyah vezir */
+  .chessboard div:nth-child(5)::before { content: "♚"; color: white; } /* Siyah şah */
+  .chessboard div:nth-child(n+9):nth-child(-n+16)::before { content: "♟"; color: white; } /* Siyah piyonlar */
+  
+  .chessboard div:nth-child(n+49):nth-child(-n+56)::before { content: "♙"; color: black; } /* Beyaz piyonlar */
+  .chessboard div:nth-child(57)::before,
+  .chessboard div:nth-child(64)::before { content: "♖"; color: black; } /* Beyaz kale */
+  .chessboard div:nth-child(58)::before,
+  .chessboard div:nth-child(63)::before { content: "♘"; color: black; } /* Beyaz at */
+  .chessboard div:nth-child(59)::before,
+  .chessboard div:nth-child(62)::before { content: "♗"; color: black; } /* Beyaz fil */
+  .chessboard div:nth-child(60)::before { content: "♕"; color: black; } /* Beyaz vezir */
+  .chessboard div:nth-child(61)::before { content: "♔"; color: black; } /* Beyaz şah */
+  
